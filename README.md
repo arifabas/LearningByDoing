@@ -1,2 +1,7 @@
-# LearningByDoing
-For testing only
+# Installation
+
+npm install
+
+# Running
+
+ng serve -o

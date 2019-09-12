@@ -1,0 +1,21 @@
+.navbar-mandiri {
+    height: 56px;
+    background: #f1f1f1;
+    
+    .container-fluid {
+        height: 56px;
+
+        .navbar-nav {
+            li {
+                height: 56px;
+                
+                a {
+                    color: #151515;
+                }
+            }
+        }
+    }
+}
+.container-content {
+    margin: 50px auto;
+}

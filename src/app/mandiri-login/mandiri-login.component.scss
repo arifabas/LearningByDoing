@@ -1,0 +1,19 @@
+h3 {
+    margin: 15px 0 25px;
+    font-size: 14pt;
+}
+.card {
+    .card-body {
+        background: #f1f1f1;
+
+        .form-group {
+            label {
+                padding-left: 0;
+            }
+            .btn-submit-oke {
+                width: 150px;
+                border: 1px solid #1e1e1e;
+            }
+        }
+    }
+}

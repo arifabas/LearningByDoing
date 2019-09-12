@@ -1,0 +1,119 @@
+<h3>Add Employee</h3>
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label class="col-md-4">Username</label>
+            <input type="text" class="form-control" formControlName="UserName" #UserName />
+          </div>
+          <div *ngIf="angForm.controls['UserName'].invalid && (angForm.controls['UserName'].dirty || angForm.controls['UserName'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['UserName'].errors.required">
+              Username is required
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="col-md-4">First name</label>
+            <input type="text" class="form-control" formControlName="FirstName" #FirstName />
+          </div>
+          <div *ngIf="angForm.controls['FirstName'].invalid && (angForm.controls['FirstName'].dirty || angForm.controls['FirstName'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['FirstName'].errors.required">
+              First name is required
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="col-md-4">Last name</label>
+            <input type="text" class="form-control" formControlName="LastName" #LastName />
+          </div>
+          <div *ngIf="angForm.controls['LastName'].invalid && (angForm.controls['LastName'].dirty || angForm.controls['LastName'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['LastName'].errors.required">
+              Last name is required
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="col-md-4">Email</label>
+            <input type="text" class="form-control" formControlName="Email" #Email />
+          </div>
+          <div *ngIf="angForm.controls['Email'].invalid && (angForm.controls['Email'].dirty || angForm.controls['Email'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['Email'].errors.required">
+              Email is required
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="col-md-4">Birthdate</label>
+            <input type="text" class="form-control" formControlName="Birthdate" #Birthdate />
+          </div>
+          <div *ngIf="angForm.controls['Birthdate'].invalid && (angForm.controls['Birthdate'].dirty || angForm.controls['Birthdate'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['Birthdate'].errors.required">
+              Birthdate is required
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="col-md-4">Basic salary</label>
+            <input type="text" class="form-control" formControlName="BasicSalary" #BasicSalary />
+          </div>
+          <div *ngIf="angForm.controls['BasicSalary'].invalid && (angForm.controls['BasicSalary'].dirty || angForm.controls['BasicSalary'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['BasicSalary'].errors.required">
+              Basic salary is required
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="col-md-4">Status</label>
+            <input type="text" class="form-control" formControlName="Status" #Status />
+          </div>
+          <div *ngIf="angForm.controls['Status'].invalid && (angForm.controls['Status'].dirty || angForm.controls['Status'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['Status'].errors.required">
+              Status is required
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="col-md-4">Group</label>
+            <input type="text" class="form-control" formControlName="Group" #Group />
+          </div>
+          <div *ngIf="angForm.controls['Group'].invalid && (angForm.controls['Group'].dirty || angForm.controls['Group'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['Group'].errors.required">
+              Group is required
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="col-md-4">Description</label>
+            <input type="text" class="form-control" formControlName="Description" #Description />
+          </div>
+          <div *ngIf="angForm.controls['Description'].invalid && (angForm.controls['Description'].dirty || angForm.controls['Description'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['Description'].errors.required">
+              Description is required
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-add-employee" [disabled]="angForm.pristine || angForm.invalid" >Add employee</button>
+      </div>
+    </form>
+  </div>
+</div>
